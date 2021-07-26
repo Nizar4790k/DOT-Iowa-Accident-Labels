@@ -47,7 +47,7 @@ def extract_frames(video_data):
                 cv2.imwrite(video_name.split(".")[0]+"_"+times[i][0]+"_"+str(frame_number)+".jpg",image) # writing the image
                 i=i+1
             else:
-                cv2.imwrite(video_name.split(".")[0]+"_"+str(frame_number)+".jpg",image)
+                cv2.imwrite(video_name.split(".")[0]+"_"+times[i][0]+"_"+str(frame_number)+".jpg",image)
        
 
             
@@ -114,6 +114,11 @@ for year in years:
         # Extract frames
         
         os.chdir("..")
+        os.chdir('..')
+        
+        
+
+        print(os.listdir())
   
 
 
