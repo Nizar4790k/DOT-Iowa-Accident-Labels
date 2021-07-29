@@ -22,5 +22,5 @@ Iowa DoT Accidents Dataset
  
 3.  Run the command "pip3 install -r requirements.txt"
 
-4.  Run DOT_Iowa_Accident_Labels.py "python3 DOT_Iowa_Accident_Labels.py"
+4.  Run "python3 DOT_Iowa_Accident_Labels.py"
 
