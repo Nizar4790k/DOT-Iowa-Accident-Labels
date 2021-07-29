@@ -2,7 +2,7 @@
 
 ## To run these scripts follow the steps below:
 
-1.  Place in the root folder the Iowa DoT Accident in the root folder.
+1.  Modify the .env file to change the Iowa DoT Dataset path by default you can place it on root folder. 
 
 2.  Make sure the dataset has a similar structure like this:
 
@@ -20,7 +20,7 @@ Iowa DoT Accidents Dataset
     └── 20200223 CB I-29 80 Motorcycle pursuit crash.zip
  ```
  
-3.  Run the command "pip3 install -r requirements.txt"
+3.  Run the command "pip3 install -r requirements.txt" to install the requeriments.
 
 4.  Run "python3 DOT_Iowa_Accident_Labels.py"
 
