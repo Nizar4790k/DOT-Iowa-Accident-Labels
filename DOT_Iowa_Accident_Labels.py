@@ -126,30 +126,31 @@ for year in years:
     
     for root, dirs, files in os.walk(year):
         for file in files:
-            #try:
-            current_directory = os.getcwd()
+            
+            try:
+                current_directory = os.getcwd()
                 
-            if file.split(".")[1] in formats:
-                video_path =os.path.join(root, file)
-                #video_folder=video_path.split("/")[len(video_path)-2]
+                if file.split(".")[1] in formats:
+                    video_path =os.path.join(root, file)
+                    #video_folder=video_path.split("/")[len(video_path)-2]
                
                
-                video_data = list(filter(lambda x: x[4]==file,data)) # filtering the video by name in the .csv file
-                print(file,video_data)
+                    video_data = list(filter(lambda x: x[4]==file,data)) # filtering the video by name in the .csv file
+                    print(file,video_data)
                    
-                if(video_data!=[]):
-                    extract_frames(video_data[0],video_path,root)
-                else:
-                    print("Video not found in the spreadshet")
+                    if(video_data!=[]):
+                        extract_frames(video_data[0],video_path,root)
+                    else:
+                        print("Video not found in the spreadshet")
 
 
 
-            """
+            
             except Exception as e :
                 
                 print(file,"THE FILE DOESN'T HAVE AN EXTENSION")
                 continue
-            """
+            
     """
         if file.endswith(".zip"):
            with zipfile.ZipFile(file,'r') as zip_ref:
